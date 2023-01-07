@@ -1,31 +1,41 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class HealthBar : MonoBehaviour
 {
     [SerializeField] private int hp;
+    [SerializeField] private Slider slider;
     // Start is called before the first frame update
-    void Start()
+    public void setHP(int hp){
+        this.hp = hp;
+    }
+    public void inicia()
     {
-        this.hp = 100;
+        this.slider.maxValue = 100;
+        this.slider.minValue = 0;
+        this.slider.value = this.hp;
     }
 
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
+
+
 
     public int getHP(){
         return this.hp;
     }
 
+
+
+
     public void getDamage(int damage){
         this.hp -= damage;
+        this.slider.value = this.hp;
     }
 
     public void heal(int heal){
         this.hp += heal;
+        this.slider.value = this.hp;
     }
 }
