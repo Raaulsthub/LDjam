@@ -6,9 +6,11 @@ public class PlayerInfo : MonoBehaviour
 {
     [SerializeField] private int hp;
     [SerializeField] private int cash;
+    public Canvas handDeckSpace;
 
+    [SerializeField]
     private List<Card> deck;
-    private List<Card> cards;
+    private List<Card> handDeck;
 
     void Start()
     {

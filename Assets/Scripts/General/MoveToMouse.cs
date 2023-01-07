@@ -9,6 +9,7 @@ public class MoveToMouse : MonoBehaviour
     [SerializeField] private float speed;
     private Vector3 target;
     private bool selected;
+    private Card card;
 
     // Start is called before the first frame update
     void Start()
@@ -16,17 +17,18 @@ public class MoveToMouse : MonoBehaviour
         movableObjects.Add(this);
         target = transform.position;
         mainCamera = FindObjectOfType<Camera>();
+        card = GetComponent<Card>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetMouseButtonDown(0) && selected)
+        if(selected)
         {
             target = mainCamera.ScreenToWorldPoint(Input.mousePosition);
             target.z = transform.position.z;
+            transform.position = target;// Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
         }
-        transform.position = Vector3.MoveTowards(transform.position, target, speed * Time.deltaTime);
     }
 
     private void OnMouseDown()
@@ -43,5 +45,11 @@ public class MoveToMouse : MonoBehaviour
             }
         }
 
+    }
+
+    private void OnMouseUp()
+    {
+        selected = false;
+        card.OnSpawnEvent?.Invoke(card);
     }
 }
