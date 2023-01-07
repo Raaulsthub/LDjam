@@ -35,6 +35,8 @@ public class HealthBar : MonoBehaviour
     }
 
     public void heal(int heal){
+        if(this.hp == 100)
+            return;
         this.hp += heal;
         this.slider.value = this.hp;
     }
