@@ -16,7 +16,7 @@ public class Card : MonoBehaviour
     public UnityAction<Card> OnHitTakenEvent;
 
     const int deckSize = 10;
-    private Canvas deckCanvas
+    private Canvas deckCanvas;
 
     // Start is called before the first frame update
     void Start()

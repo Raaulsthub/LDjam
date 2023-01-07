@@ -1,6 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
-guid: 05a6b41066f020680af21045c475112b
+guid: 99dcf64dde70293dfb2538bdb89ec28b
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -20,6 +19,3 @@ TrueTypeFontImporter:
   userData: 
   assetBundleName: 
   assetBundleVariant: 
-=======
-guid: 99dcf64dde70293dfb2538bdb89ec28b
->>>>>>> 64c47ca0f5b99e4428f76d3e4695fe56c1836d48
