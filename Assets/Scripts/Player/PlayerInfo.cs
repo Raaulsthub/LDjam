@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInfo : MonoBehaviour
 {
-    [SerializeField] private HealtBar health = new HealtBar();
+    [SerializeField] private int hp;
     [SerializeField] private int cash;
 
     private List<Card> deck;
@@ -12,7 +12,7 @@ public class PlayerInfo : MonoBehaviour
 
     void Start()
     {
-        this.cash = 0;
+        
     }
 
 
@@ -24,7 +24,7 @@ public class PlayerInfo : MonoBehaviour
 
     public void TakeHit(int damage)
     {
-        healt.getDamage(damage);
+        this.hp -= damage;
     }
 
     public void DepositMoney(int amount)
