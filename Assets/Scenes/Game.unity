@@ -746,12 +746,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 1086763370}
   cash: 0
-  handDeckSpace: {fileID: 1313932837}
   deck:
   - {fileID: 1036920237}
   - {fileID: 1428557645}
   - {fileID: 199950576}
   - {fileID: 590930674}
+  deckCanvas: {fileID: 1313932837}
 --- !u!1 &1313932834
 GameObject:
   m_ObjectHideFlags: 0
