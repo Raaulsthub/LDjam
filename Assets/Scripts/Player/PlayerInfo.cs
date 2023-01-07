@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerInfo : MonoBehaviour
 {
-    [SerializeField] private int hp;
+    [SerializeField] private HealthBar health;
     [SerializeField] private int cash;
     public Canvas handDeckSpace;
 
@@ -14,20 +14,22 @@ public class PlayerInfo : MonoBehaviour
 
     void Start()
     {
-        
+        health.setHP(100);
+        health.inicia();
     }
 
 
 
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Space)){
+            health.getDamage(10);
+        }
+        else if(Input.GetKeyDown(KeyCode.A)){
+            health.heal(10);
+        }
     }
 
-    public void TakeHit(int damage)
-    {
-        this.hp -= damage;
-    }
 
     public void DepositMoney(int amount)
     {
