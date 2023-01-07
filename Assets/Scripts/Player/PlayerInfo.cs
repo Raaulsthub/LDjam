@@ -18,8 +18,6 @@ public class PlayerInfo : MonoBehaviour
         health.inicia();
     }
 
-
-
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.Space)){
