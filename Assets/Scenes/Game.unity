@@ -215,9 +215,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 199950574}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49cd75cd7cf7c1458a3bc200167e857, type: 3}
+  m_Script: {fileID: 11500000, guid: d87b5ef2f02db3d43b20bceac8f7e6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!61 &199950578
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -306,6 +307,14 @@ PrefabInstance:
     - target: {fileID: 9008883468344894384, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
       propertyPath: m_Name
       value: Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883468344894384, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883468344894387, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_RenderMode
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9008883468344894388, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
       propertyPath: m_Pivot.x
@@ -467,9 +476,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 590930672}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49cd75cd7cf7c1458a3bc200167e857, type: 3}
+  m_Script: {fileID: 11500000, guid: d87b5ef2f02db3d43b20bceac8f7e6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!61 &590930676
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -670,9 +680,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1036920231}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49cd75cd7cf7c1458a3bc200167e857, type: 3}
+  m_Script: {fileID: 11500000, guid: d87b5ef2f02db3d43b20bceac8f7e6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!114 &1036920237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -736,7 +747,11 @@ MonoBehaviour:
   health: {fileID: 1086763370}
   cash: 0
   handDeckSpace: {fileID: 1313932837}
-  deck: []
+  deck:
+  - {fileID: 1036920237}
+  - {fileID: 1428557645}
+  - {fileID: 199950576}
+  - {fileID: 590930674}
 --- !u!1 &1313932834
 GameObject:
   m_ObjectHideFlags: 0
@@ -894,9 +909,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1428557643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49cd75cd7cf7c1458a3bc200167e857, type: 3}
+  m_Script: {fileID: 11500000, guid: d87b5ef2f02db3d43b20bceac8f7e6ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 0
 --- !u!61 &1428557647
 BoxCollider2D:
   m_ObjectHideFlags: 0
