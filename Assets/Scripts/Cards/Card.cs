@@ -20,7 +20,7 @@ public class Card : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        OnSpawnEvent += Spawn;
     }
 
     // Update is called once per frame
@@ -34,8 +34,8 @@ public class Card : MonoBehaviour
         life -= damage;
     }
 
-    public void Spawn()
+    public void Spawn(Card e)
     {
-        this.transform.position = Vector3.zero;
+        Debug.Log("CARTA SPAWNADA");
     }
 }
