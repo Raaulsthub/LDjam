@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class InputController : MonoBehaviour
 {
@@ -12,9 +13,9 @@ public class InputController : MonoBehaviour
     }
     private void Update()
     {
-        Debug.Log(mainCamera.ScreenToWorldPoint(Input.mousePosition));
+        //Debug.Log(mainCamera.ScreenToWorldPoint(Input.mousePosition));
         Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
-        mouseWorldPosition.z = 0;
+        mouseWorldPosition.z = transform.position.z;
         transform.position = mouseWorldPosition;    
     }
 }
