@@ -1,5 +1,17 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Assets/Fonts.meta
 guid: a57e3d00d7823085a8c96998e498995f
+========
+<<<<<<< HEAD
+guid: adabdff243a2bf64b9a5663b4ca0dc37
+=======
+<<<<<<< HEAD
+guid: 9e5f31f78a4e04b32ac5285718a52b37
+=======
+guid: d5cbd1340a73fb64a8b35e794bf180f1
+>>>>>>> a701dacac7cf8b92480dbda655ce763ca45e6d88
+>>>>>>> 8789c54b0a762cdee647cfd28f0f628f2a10be66
+>>>>>>>> f7fbf836cfd9c06a1f90588be47c4c405ec39418:Assets/Scripts/GlobalEvents.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}

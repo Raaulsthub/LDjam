@@ -9,13 +9,14 @@ public class Card : MonoBehaviour
 
     [SerializeField]
     private int cost;
-    [SerializeField]
-    private int life;
 
     public UnityAction<Card> OnSpawnEvent;
     public UnityAction<Card> OnDestroyEvent;
     public UnityAction<Card> OnUpdateEvent;
     public UnityAction<Card> OnHitTakenEvent;
+
+    const int deckSize = 10;
+    private Canvas deckCanvas
 
     // Start is called before the first frame update
     void Start()
@@ -29,10 +30,6 @@ public class Card : MonoBehaviour
         
     }
 
-    public void DealDemage(int damage)
-    {
-        life -= damage;
-    }
 
     public void Spawn(Card e)
     {
