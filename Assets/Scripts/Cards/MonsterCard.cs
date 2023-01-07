@@ -4,15 +4,5 @@ using UnityEngine;
 
 public class Monster : Card
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    //tenho fé que no futuro essa classe será útil
 }
