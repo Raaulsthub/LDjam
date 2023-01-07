@@ -9,8 +9,6 @@ public class Card : MonoBehaviour
 
     [SerializeField]
     private int cost;
-    [SerializeField]
-    private int life;
 
     public UnityAction<Card> OnSpawnEvent;
     public UnityAction<Card> OnDestroyEvent;
@@ -29,10 +27,6 @@ public class Card : MonoBehaviour
         
     }
 
-    public void DealDemage(int damage)
-    {
-        life -= damage;
-    }
 
     public void Spawn(Card e)
     {
