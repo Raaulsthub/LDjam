@@ -404,6 +404,38 @@ PrefabInstance:
       propertyPath: m_Value
       value: 100
       objectReference: {fileID: 0}
+    - target: {fileID: 9008883468661686966, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 255.0993
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883468661686966, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 33.4548
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883468661686966, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -166.92532
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883468661686966, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 151.6573
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883469373435928, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 126.3353
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883469373435928, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 41.9631
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883469373435928, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -61.4046
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883469373435928, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.4352
+      objectReference: {fileID: 0}
     - target: {fileID: 9008883469373435942, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -415,6 +447,22 @@ PrefabInstance:
     - target: {fileID: 9008883469619547254, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883469619547254, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: -11.0733
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883469619547254, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0.8123
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883469619547254, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 1.7648926
+      objectReference: {fileID: 0}
+    - target: {fileID: 9008883469619547254, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0.40615082
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 9008883468661686953, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
@@ -746,12 +794,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: {fileID: 1086763370}
   cash: 0
-  handDeckSpace: {fileID: 1313932837}
   deck:
   - {fileID: 1036920237}
   - {fileID: 1428557645}
   - {fileID: 199950576}
   - {fileID: 590930674}
+  deckCanvas: {fileID: 1313932837}
 --- !u!1 &1313932834
 GameObject:
   m_ObjectHideFlags: 0
