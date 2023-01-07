@@ -6,13 +6,13 @@ public class PlayerInfo : MonoBehaviour
 {
     [SerializeField] private HealthBar health;
     [SerializeField] private int cash;
-    public Canvas handDeckSpace;
 
     public bool isAlive { get; private set; } = true;
 
     [SerializeField]
     private List<Card> deck;
     private List<Card> handDeck;
+    [SerializeField]
     private Canvas deckCanvas;
     private const int deckSize = 10;
     private const float cardOffset = 1f;
@@ -21,6 +21,15 @@ public class PlayerInfo : MonoBehaviour
     {
         health.setHP(100);
         health.inicia();
+
+        Vector3 start = deckCanvas.transform.position;
+        start.x -= (float)(cardOffset * deckSize * 0.5f);
+
+        foreach(Card c in deck)
+        {
+            c.transform.position = start;
+            start.x += cardOffset;
+        }
 
     }
 
