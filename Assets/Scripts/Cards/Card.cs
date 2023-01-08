@@ -18,6 +18,7 @@ public class Card : MonoBehaviour
     const int deckSize = 10;
     private Canvas deckCanvas;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -32,7 +33,10 @@ public class Card : MonoBehaviour
 
 
     public void Spawn(Card e)
-    {
-        Debug.Log("CARTA SPAWNADA");
+    {   
+        
     }
+
+    
+
 }
