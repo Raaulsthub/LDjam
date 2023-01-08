@@ -36,6 +36,12 @@ public class HandDeck : MonoBehaviour
         {
             Card c = deck[i];
             Bounds cBounds = c.GetComponent<BoxCollider2D>().bounds;
+            MoveToMouse cMouse = c.GetComponent<MoveToMouse>();
+
+            if(cMouse.selected)
+            {
+                return;
+            }
 
             c.transform.position = transform.position;
             c.transform.rotation = transform.rotation;
@@ -49,6 +55,12 @@ public class HandDeck : MonoBehaviour
         {
             Card c = deck[i];
             Bounds cBounds = c.GetComponent<BoxCollider2D>().bounds;
+            MoveToMouse cMouse = c.GetComponent<MoveToMouse>();
+
+            if (cMouse.selected)
+            {
+                return;
+            }
 
             if (cBounds.Contains(mousePos))
             {
