@@ -8,7 +8,7 @@ public class MoveToMouse : MonoBehaviour
     private Camera mainCamera;
     [SerializeField] private float speed;
     private Vector3 target;
-    private bool selected;
+    public bool selected;
     private Card card;
 
     // Start is called before the first frame update

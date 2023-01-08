@@ -1,0 +1,26 @@
+Criaturas:
+    Plantas:
+        Cenoura:        +1 de vida para um aliado aleatório         (feito)
+        Milho:          +1 ataque por turno                         (feito)
+        Soja:           +1 Dinheiro por turno                       (feito)
+        Feijão:         Turno jogado, diminui o custo das plantas
+        Beterraba:      +1 de ataque a aliados adjacentes
+    Insetos:
+        Grilo:          +1 de dano contra plantas                   (feito)
+        Pulgão:         Revive infinito fodase, dano passa pra tras (feito)
+        Mosca-Branca:   Quando mata uma planta, ganha +1/+1         (feito)
+        Lagarta:        Da dano no inimigo e na linha atras dele
+        Vespa:          Causa dano direto a vida do inimigo
+
+Clima:
+    Chuva:  + planta                                                (feito)
+    Geada:  Dano Planta                                             (feito)
+            Congela Inseto                                          (feito)
+    Sol:    - planta                                                (feito)
+
+Feitiços:
+    Nuvem de gafanhotos:    2 de dano a todas as plantas de uma linha
+    Asperção de veneno:     2 de dano para todos os insetos de uma linha
+    Adubo:                  +2/+2 a uma planta
+    Pesticida:              3 de dano a um inseto
+
