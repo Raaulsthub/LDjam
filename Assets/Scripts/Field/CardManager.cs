@@ -42,7 +42,7 @@ public class CardManager : MonoBehaviour
                 card.SetDiselectedScale();
                 cs.card = card;
                 allyCards[index] = card;
-                handDeck.deck.Remove(card);
+                allyHandDeck.deck.Remove(card);
             }
         }       
     }
