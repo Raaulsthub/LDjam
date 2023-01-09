@@ -1331,8 +1331,12 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9008883468344894387, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1986515481}
+    - target: {fileID: 9008883468344894387, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
       propertyPath: m_RenderMode
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9008883468344894387, guid: 70b5f621ef5c67f64bddffeff387d75f, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
@@ -2455,7 +2459,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1238068962}
-  handDeck: {fileID: 1313932839}
+  bot: {fileID: 33830407}
+  allyHandDeck: {fileID: 1313932839}
+  enemyHandDeck: {fileID: 503800694}
   allyCards:
   - {fileID: 0}
   - {fileID: 0}
@@ -2528,8 +2534,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -425.4375, y: -196.65186}
-  m_SizeDelta: {x: 200.33, y: 85.08}
+  m_AnchoredPosition: {x: -284, y: -136.23}
+  m_SizeDelta: {x: 160.78, y: 87.74}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &859152799
 MonoBehaviour:

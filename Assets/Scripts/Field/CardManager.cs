@@ -8,7 +8,9 @@ public class CardManager : MonoBehaviour
 {
     // Start is called before the first frame update
     [SerializeField] public PlayerInfo player;
-    [SerializeField] public HandDeck handDeck;
+    [SerializeField] public PlayerInfo bot;
+    [SerializeField] public HandDeck allyHandDeck;
+    [SerializeField] public HandDeck enemyHandDeck;
     [SerializeField] public List<Card> allyCards = new List<Card>();
     [SerializeField] public List<Card> enemyCards = new List<Card>();
     [SerializeField] GameObject allyField;
@@ -40,7 +42,7 @@ public class CardManager : MonoBehaviour
                 card.SetDiselectedScale();
                 cs.card = card;
                 allyCards[index] = card;
-                handDeck.deck.Remove(card);
+                allyHandDeck.deck.Remove(card);
             }
         }       
     }

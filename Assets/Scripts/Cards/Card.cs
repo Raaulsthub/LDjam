@@ -24,6 +24,7 @@ public class Card : MonoBehaviour
 
     const int deckSize = 10;
     private HandDeck handDeck = null;
+    private PlayerInfo player = null;
     private float selectedZoom = 1.5f;
     private float unSelectedZoom = 0.8f;
 
@@ -49,8 +50,26 @@ public class Card : MonoBehaviour
         GameManager game = GameManager.GetInstance();
         card.PutAllyCardOnTable(e);
         
- 
+        if(!game.PlayerPlayed && !game.ComputerPlayed)
+        {
+            this.handDeck = card.allyHandDeck;
+            this.player = card.player;
+        }
+        else
+        {
+            this.handDeck = card.enemyHandDeck;
+            this.player = card.bot;
+        }
+    }
 
+    public List<Card> GetAllies()
+    {
+        return handDeck.deck;
+    }
+
+    public PlayerInfo GetPlayer()
+    {
+        return player;
     }
 
     public void SetSelectedScale()
