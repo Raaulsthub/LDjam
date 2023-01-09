@@ -899,9 +899,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c0f709d0a465a4caaceb61f10f3f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 0
-  selectedZoom: 0.8
-  unSelectedZoom: 0.4
+  cost: 2
+  damage: 2
+  life: 3
+  moneyGen: 0
+  damageText: {fileID: 5866252267226406335}
+  costText: {fileID: 2021261308190544350}
+  lifeText: {fileID: 490660831338190824}
 --- !u!114 &34549980728762923
 MonoBehaviour:
   m_ObjectHideFlags: 0
