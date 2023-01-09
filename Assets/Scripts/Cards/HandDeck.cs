@@ -11,7 +11,6 @@ public class HandDeck : MonoBehaviour
     private float defaultScale;
     private const float fstCardAngle = 20f;
     public float cardOffset = 1f;
-    public float selectedZoom = 1.5f;
 
     public List<Card> deck;
 
@@ -68,7 +67,7 @@ public class HandDeck : MonoBehaviour
             if (cBounds.Contains(mousePos))
             {
                 c.transform.rotation = transform.rotation;
-                c.transform.localScale = new Vector2(defaultScale * selectedZoom, defaultScale * selectedZoom);
+                c.SetSelectedScale();
                 c.transform.position = new Vector2(c.transform.position.x, transform.position.y);
                 break;
             }

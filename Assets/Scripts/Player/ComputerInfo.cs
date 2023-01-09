@@ -20,6 +20,7 @@ public class ComputerInfo : PlayerInfo {
         int index = Random.Range(0, count - 1);
         int slot = Random.Range(0, 7);
         Card card = handDeck.deck[index];
+        handDeck.deck.Remove(card);
 
         cardManager.PutEnemyCardOnTable(card, slot);
         gameManager.BotSetPlayed();

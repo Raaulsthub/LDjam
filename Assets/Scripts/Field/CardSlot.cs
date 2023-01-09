@@ -24,7 +24,7 @@ public class CardSlot : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     {
         if (card != null)
         {
-            card.transform.position = transform.position;
+            card.transform.position = new Vector2(transform.position.x, transform.position.y);
         }
     }
 }

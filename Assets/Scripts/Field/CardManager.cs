@@ -35,8 +35,9 @@ public class CardManager : MonoBehaviour
             CardSlot cs = cardS.GetComponent("CardSlot") as CardSlot;
             int index = child.GetSiblingIndex();
 
-            if (cs.isMouseOver)
+            if (cs.isMouseOver && cs.card == null)
             {
+                card.SetDiselectedScale();
                 cs.card = card;
                 allyCards[index] = card;
                 handDeck.deck.Remove(card);
@@ -52,6 +53,13 @@ public class CardManager : MonoBehaviour
 
             Transform cardS = enemyField.transform.GetChild(slot);
             CardSlot cs = cardS.GetComponent("CardSlot") as CardSlot;
+
+            //simular o selecterd e o deselected
+
+            card.SetSelectedScale();
+            card.SetDiselectedScale();
+
+
             cs.card = card;
         }
     }

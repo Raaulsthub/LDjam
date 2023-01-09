@@ -111,6 +111,13 @@ public class GameManager : MonoBehaviour
     {
         int count = deck.transform.childCount;
         int index = Random.Range(0, count - 1);
+
+        if(allCards.transform.childCount == 0)
+        {
+            return;
+            Debug.Log("sem novas cartas para comprar");
+        }
+
         Transform t = allCards.transform.GetChild(index);
         t.SetParent(deck.transform);
         deck.deck.Add(t.GetComponent<Card>());

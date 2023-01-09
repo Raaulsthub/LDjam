@@ -17,6 +17,8 @@ public class Card : MonoBehaviour
 
     const int deckSize = 10;
     private Canvas deckCanvas;
+    public float selectedZoom = 0.8f;
+    public float unSelectedZoom = 0.4f;
 
 
     // Start is called before the first frame update
@@ -35,9 +37,22 @@ public class Card : MonoBehaviour
     public void Spawn(Card e)
     {
         CardManager manager = CardManager.GetIsntace();
+
+
+
         manager.PutAllyCardOnTable(e);
     }
 
-    
+    public void SetSelectedScale()
+    {
+        transform.localScale = new Vector2(selectedZoom, selectedZoom);
+    }
+
+    public void SetDiselectedScale()
+    {
+        transform.localScale = new Vector2(selectedZoom, selectedZoom);
+
+        transform.rotation = Quaternion.identity;
+    }
 
 }

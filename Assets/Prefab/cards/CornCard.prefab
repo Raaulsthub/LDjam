@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7785690560828501265}
   - component: {fileID: 7785690560828501266}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Money
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7785690561280005998}
   - component: {fileID: 7785690561280005999}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: attack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -178,7 +178,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7785690561539521569}
   - component: {fileID: 7785690561539521570}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: life
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -265,7 +265,7 @@ GameObject:
   - component: {fileID: 7785690562669958948}
   - component: {fileID: 9077384666805694102}
   - component: {fileID: 34549980728762923}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CornCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
