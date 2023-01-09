@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
 
     private void addCard(HandDeck deck)
     {
-        int count = deck.transform.childCount;
+        int count = allCards.transform.childCount;
         int index = Random.Range(0, count - 1);
 
         if(allCards.transform.childCount == 0)

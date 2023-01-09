@@ -16,9 +16,9 @@ public class Card : MonoBehaviour
     public UnityAction<Card> OnHitTakenEvent;
 
     const int deckSize = 10;
-    private Canvas deckCanvas;
-    public float selectedZoom = 0.8f;
-    public float unSelectedZoom = 0.4f;
+    private HandDeck handDeck = null;
+    private float selectedZoom = 1.5f;
+    private float unSelectedZoom = 0.8f;
 
 
     // Start is called before the first frame update
@@ -36,21 +36,24 @@ public class Card : MonoBehaviour
 
     public void Spawn(Card e)
     {
-        CardManager manager = CardManager.GetIsntace();
+        CardManager card = CardManager.GetIsntace();
+        GameManager game = GameManager.GetInstance();
+        card.PutAllyCardOnTable(e);
+        
+ 
 
-
-
-        manager.PutAllyCardOnTable(e);
     }
 
     public void SetSelectedScale()
     {
-        transform.localScale = new Vector2(selectedZoom, selectedZoom);
+        float s = transform.localScale.x * selectedZoom;
+        transform.localScale = new Vector2(s,s);
     }
 
     public void SetDiselectedScale()
     {
-        transform.localScale = new Vector2(selectedZoom, selectedZoom);
+        float s = transform.localScale.x / selectedZoom;
+        transform.localScale = new Vector2(s,s);
 
         transform.rotation = Quaternion.identity;
     }
