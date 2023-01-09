@@ -10,17 +10,19 @@ public class PlayerInfo : MonoBehaviour
     public bool isAlive { get; private set; } = true;
 
     [SerializeField]
-    // private List<Card> deck;
     public HandDeck handDeck;
 
     void Start()
     {
+        /*
         health.setHP(100);
-        health.inicia();
+        health.inicia(); 
+        */
     }
 
     void Update()
     {
+        /*
         if(Input.GetKeyDown(KeyCode.Space)){
             health.getDamage(10);
         }
@@ -32,6 +34,7 @@ public class PlayerInfo : MonoBehaviour
         {
             isAlive = false;
         }
+        */
     }
 
 

@@ -44,6 +44,18 @@ public class CardManager : MonoBehaviour
         }       
     }
 
+    public void PutEnemyCardOnTable(Card card, int slot)
+    {
+        if (enemyCards[slot] == null)
+        {
+            enemyCards[slot] = card;
+
+            Transform cardS = enemyField.transform.GetChild(slot);
+            CardSlot cs = cardS.GetComponent("CardSlot") as CardSlot;
+            cs.card = card;
+        }
+    }
+
     private void Display()
     {
         
