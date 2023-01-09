@@ -9,8 +9,8 @@ Criaturas:
         Grilo:          +1 de dano contra plantas                           (feito)
         Pulgão:         Revive infinito fodase, dano passa pra tras         (feito)
         Mosca-Branca:   Quando mata uma planta, ganha +1/+1                 (feito)
-        Lagarta:        Da dano no inimigo e na linha atras dele
-        Vespa:          Causa dano direto a vida do inimigo
+        Lagarta:        Da dano no inimigo e no inimigo atras dele          (feito)
+        Vespa:          Causa dano direto a vida do inimigo                 (feito)
 
 Clima:
     Chuva:  + planta                                                        (feito)
@@ -21,5 +21,5 @@ Feitiços:
     Nuvem de gafanhotos:    2 de dano a todas as plantas de uma linha       (feito)
     Asperção de veneno:     2 de dano para todos os insetos de uma linha    (feito)
     Adubo:                  +2/+2 a uma planta                              (feito)
-    Pesticida:              3 de dano a um inseto
+    Pesticida:              3 de dano a um inseto                           (feito)
 
