@@ -27,16 +27,18 @@ public class CardManager : MonoBehaviour
         instance = this;
     }
 
-    public void PutCardOnTable(Card card) {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    //ainda precisa ver como irá ser feito o bot...
+    public void PutAllyCardOnTable(Card card) {
         foreach (Transform child in allyField.transform)
         {
             Transform cardS = allyField.transform.GetChild(child.transform.GetSiblingIndex());
             CardSlot cs = cardS.GetComponent("CardSlot") as CardSlot;
+            int index = child.GetSiblingIndex();
 
             if (cs.isMouseOver)
             {
                 cs.card = card;
+                allyCards[index] = card;
                 handDeck.deck.Remove(card);
             }
         }       

@@ -35,7 +35,7 @@ public class Card : MonoBehaviour
     public void Spawn(Card e)
     {
         CardManager manager = CardManager.GetIsntace();
-        manager.PutCardOnTable(e);
+        manager.PutAllyCardOnTable(e);
     }
 
     
