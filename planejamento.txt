@@ -3,8 +3,8 @@ Criaturas:
         Cenoura:        +1 de vida para um aliado aleatório                 (feito)
         Milho:          +1 ataque por turno                                 (feito)
         Soja:           +1 Dinheiro por turno                               (feito)
-        Feijão:         Turno jogado, diminui o custo das plantas
-        Beterraba:      +1 de ataque a aliados adjacentes
+        Feijão:         Turno jogado, diminui o custo das plantas           (feito)
+        Beterraba:      +1 de ataque a aliados adjacentes                   (feito)
     Insetos:
         Grilo:          +1 de dano contra plantas                           (feito)
         Pulgão:         Revive infinito fodase, dano passa pra tras         (feito)
