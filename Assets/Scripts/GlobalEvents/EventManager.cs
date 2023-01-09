@@ -5,26 +5,37 @@ using UnityEngine;
 
 public class EventManager : MonoBehaviour
 {
-    // public grid
-
-    public void Atack()
+    public void HealRandomAlly(Card e)
     {
+        List<Card> deck = e.GetAllies();
 
+        int index = deck.Count;
+        index = Random.Range(0, index);
+
+        Card target = deck[index];
+        //target.life += 2
     }
 
-
-
-
-
-    // Start is called before the first frame update
-    void Start()
+    public void IncreaseAtack(Card e)
     {
-        
+        //e.atack += 1
     }
 
-    // Update is called once per frame
-    void Update()
+    public void IncreaseCashBy2(Card e)
     {
-        
+        PlayerInfo p = e.GetPlayer();
+        //p.cash += 2;
     }
+
+    public void IncreaseCashBy1(Card e)
+    {
+        PlayerInfo p = e.GetPlayer();
+        //p.cash += 1;
+    }
+
+    public void AtackLine(Card e)
+    {
+        //BoxCollider2D collider = e.TryGetComponent<BoxCollider2D>();
+    }
+
 }
