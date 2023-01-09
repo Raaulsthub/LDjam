@@ -785,7 +785,7 @@ GameObject:
   - component: {fileID: 9077384666805694102}
   - component: {fileID: 34549980728762923}
   m_Layer: 6
-  m_Name: SoyCard
+  m_Name: CricketCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -850,7 +850,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 21300000, guid: f88c25e9c35424847836dbcc3b672a22, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 63aad352ae844f04bb3908db14928e59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -899,10 +899,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4c0f709d0a465a4caaceb61f10f3f70, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cost: 2
+  cost: 1
   damage: 1
-  life: 4
-  moneyGen: 1
+  life: 1
+  moneyGen: 0
   damageText: {fileID: 5866252267226406335}
   costText: {fileID: 2021261308190544350}
   lifeText: {fileID: 490660831338190824}
