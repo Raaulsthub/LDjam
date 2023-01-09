@@ -6,25 +6,28 @@ using UnityEngine.UI;
 using TMPro;
 using System;
 
+public delegate void CardEvent(object sender, CardEventArgs e);
+
 public class Card : MonoBehaviour
 {
 
-    [SerializeField] private int cost;
-    [SerializeField] private int damage;
-    [SerializeField] private int life;
+    [SerializeField] public int cost;
+    [SerializeField] public int damage;
+    [SerializeField] public int life;
     [SerializeField] private int moneyGen;
     [SerializeField] private GameObject damageText;
     [SerializeField] private GameObject costText;
     [SerializeField] private GameObject lifeText;
 
-    public UnityAction<Card> OnSpawnEvent;
-    public UnityAction<Card> OnDestroyEvent;
-    public UnityAction<Card> OnUpdateEvent;
-    public UnityAction<Card> OnHitTakenEvent;
+    public CardEvent OnSpawnEvent;
+    public CardEvent OnDestroyEvent;
+    public CardEvent OnUpdateEvent;
+    public CardEvent OnHitTakenEvent;
 
     const int deckSize = 10;
     private HandDeck handDeck = null;
     private PlayerInfo player = null;
+    public int slot = -1;
     private float selectedZoom = 1.5f;
     private float unSelectedZoom = 0.8f;
 
@@ -44,7 +47,7 @@ public class Card : MonoBehaviour
     }
 
 
-    public void Spawn(Card e)
+    public void Spawn(System.Object sender, CardEventArgs args)
     {
         CardManager card = CardManager.GetIsntace();
         GameManager game = GameManager.GetInstance();

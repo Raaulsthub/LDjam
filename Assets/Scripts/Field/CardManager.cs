@@ -41,6 +41,7 @@ public class CardManager : MonoBehaviour
             {
                 card.SetDiselectedScale();
                 cs.card = card;
+                card.slot = index;
                 allyCards[index] = card;
                 allyHandDeck.deck.Remove(card);
             }
@@ -52,6 +53,7 @@ public class CardManager : MonoBehaviour
         if (enemyCards[slot] == null)
         {
             enemyCards[slot] = card;
+            card.slot = slot;
 
             Transform cardS = enemyField.transform.GetChild(slot);
             CardSlot cs = cardS.GetComponent("CardSlot") as CardSlot;
