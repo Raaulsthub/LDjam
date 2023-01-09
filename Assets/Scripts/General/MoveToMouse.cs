@@ -48,6 +48,6 @@ public class MoveToMouse : MonoBehaviour
     private void OnMouseUp()
     {
         selected = false;
-        card.OnSpawnEvent?.Invoke(card);
+        card.OnSpawnEvent?.Invoke(this.GetComponent<Card>());
     }
 }
