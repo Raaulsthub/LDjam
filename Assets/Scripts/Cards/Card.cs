@@ -7,8 +7,7 @@ using System;
 public class Card : MonoBehaviour
 {
 
-    [SerializeField]
-    private int cost;
+    [SerializeField] private int cost;
 
     public UnityAction<Card> OnSpawnEvent;
     public UnityAction<Card> OnDestroyEvent;
