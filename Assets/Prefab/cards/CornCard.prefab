@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1 &7785690561280005997
@@ -262,8 +262,9 @@ GameObject:
   m_Component:
   - component: {fileID: 7785690562669958946}
   - component: {fileID: 7785690562669958945}
-  - component: {fileID: 7785690562669958947}
   - component: {fileID: 7785690562669958948}
+  - component: {fileID: 9077384666805694102}
+  - component: {fileID: 34549980728762923}
   m_Layer: 0
   m_Name: CornCard
   m_TagString: Untagged
@@ -280,7 +281,7 @@ Transform:
   m_GameObject: {fileID: 7785690562669958944}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.62, y: -0.06, z: -2.3425984}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7785690561280005998}
@@ -341,21 +342,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &7785690562669958947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7785690562669958944}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6b7496963b60d3242a59adce13d77f89, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cost: 0
-  life: 0
-  damage: 0
 --- !u!61 &7785690562669958948
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -369,7 +355,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.011970997, y: 0.011970639}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -380,5 +366,32 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4, y: 5.5}
+  m_Size: {x: 3.1141624, y: 4.5662794}
   m_EdgeRadius: 0
+--- !u!114 &9077384666805694102
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7785690562669958944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4c0f709d0a465a4caaceb61f10f3f70, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cost: 0
+--- !u!114 &34549980728762923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7785690562669958944}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d87b5ef2f02db3d43b20bceac8f7e6ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  selected: 0

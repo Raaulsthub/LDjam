@@ -8,8 +8,10 @@ public class HandDeck : MonoBehaviour
     private const int deckMaxSize = 10;
     [SerializeField]
     //angulo em graus da primeira carta
+    private float defaultScale;
     private const float fstCardAngle = 20f;
     public float cardOffset = 1f;
+    public float selectedZoom = 1.5f;
 
     public List<Card> deck;
 
@@ -17,6 +19,7 @@ public class HandDeck : MonoBehaviour
     void Start()
     {
         deckCanvas = GetComponent<Canvas>();
+        defaultScale = deck[0].transform.localScale.x;
     }
 
     void Update()
@@ -45,7 +48,7 @@ public class HandDeck : MonoBehaviour
 
             c.transform.position = transform.position;
             c.transform.rotation = transform.rotation;
-            c.transform.localScale = Vector2.one;
+            c.transform.localScale = new Vector2(defaultScale, defaultScale);
             c.transform.RotateAround(axisPoint, Vector3.forward, curretAngle);
 
             curretAngle += offsetAngle;
@@ -65,7 +68,7 @@ public class HandDeck : MonoBehaviour
             if (cBounds.Contains(mousePos))
             {
                 c.transform.rotation = transform.rotation;
-                c.transform.localScale = new Vector2(2, 2);
+                c.transform.localScale = new Vector2(defaultScale * selectedZoom, defaultScale * selectedZoom);
                 c.transform.position = new Vector2(c.transform.position.x, transform.position.y);
                 break;
             }

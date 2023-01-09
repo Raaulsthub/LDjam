@@ -34,14 +34,12 @@ public class MoveToMouse : MonoBehaviour
     private void OnMouseDown()
     {
         this.selected = true;
-        GetComponent<SpriteRenderer>().color = Color.white;
         
         foreach(MoveToMouse obj in movableObjects)
         {
             if (obj != this)
             {
                 obj.selected= false;
-                obj.gameObject.GetComponent<SpriteRenderer>().color = Color.red;
             }
         }
 
